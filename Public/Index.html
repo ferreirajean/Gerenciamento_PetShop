@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amigo Fiel - Cadastro de Clientes</title>
+    <link rel="stylesheet" href="./Css/Style.css" />
+  </head>
+  <body>
+    <div class="container">
+     
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" data-section="apresentacao">Início</a></li>
+          <li><a href="#" data-section="cadastro">Cadastro</a></li>
+        </ul>
+      </nav>
+
+     
+      <section id="apresentacao">
+        <header>
+          <h1>🐾 Amigo Fiel</h1>
+          <p>Bem-vindo ao sistema de cadastro de clientes e pets</p>
+        </header>
+      </section>
+
+      
+      <section id="cadastro" class="hidden">
+        <header>
+          <h1>Amigo Fiel</h1>
+          <p>Sistema de Cadastro de Clientes e Pets</p>
+        </header>
+
+        <main>
+          <form id="cadastroForm">
+            <fieldset>
+              <legend>Dados do Dono</legend>
+              <div class="input-group">
+                <label for="nome_completo"></label>
+                <input
+                  type="text"
+                  id="nome_completo"
+                  name="nome_completo"
+                  placeholder="Nome Completo"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="cpf"></label>
+                <input type="text" id="cpf" name="cpf" placeholder="CPF" required />
+              </div>
+              <div class="input-group">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required />
+              </div>
+              <div class="input-group">
+                <label for="telefone"></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required />
+              </div>
+              <div class="input-group">
+                <label for="endereco"></label>
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço" required />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Dados do Pet</legend>
+              <div class="input-group">
+                <label for="nome_pet"></label>
+                <input type="text" id="nome_pet" name="nome_pet" placeholder="Nome do Pet" required />
+              </div>
+              <div class="input-group">
+                <label for="especie"></label>
+                <input
+                  type="text"
+                  id="especie"
+                  name="especie"
+                  placeholder="Ex: Cão, Gato, Pássaro"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="raca"></label>
+                <input type="text" id="raca" name="raca" placeholder="Raça" required />
+              </div>
+              <div class="input-group">
+                <label for="data_nascimento"></label>
+                <input
+                  type="date"
+                  id="data_nascimento"
+                  name="data_nascimento"
+                  placeholder="Data de Nascimento"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="observacoes"></label>
+                <textarea
+                  id="observacoes"
+                  name="observacoes"
+                  placeholder="Observações Adicionais"
+                  rows="4"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <button type="submit">Cadastrar</button>
+          </form>
+          <div id="mensagem" class="hidden"></div>
+        </main>
+
+        <footer>
+          <p>&copy; 2025 Pet Shop Amigo Fiel</p>
+        </footer>
+      </section>
+    </div>
+    <script src="./JavaScript/Script.js"></script>
+  </body>
+</html>
